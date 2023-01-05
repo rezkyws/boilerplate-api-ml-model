@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  service-name:
+    image: "image:name"
+    container_name: container_name
+    restart: "always"
+    build: ./
+    ports:
+      - "3345:3345"
+    network_mode: bridge
