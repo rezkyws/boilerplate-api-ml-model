@@ -10,7 +10,10 @@ class ServiceOne:
     def get_inference(self, text):
         try:
             # do something here
-            text = models.the_model
+            temp = []
+            temp[0] = models.the_model
+            temp[1] = 100
+            text = temp 
 
             return text, 1, None
         
