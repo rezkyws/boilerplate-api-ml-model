@@ -1,7 +1,7 @@
 # api core module for all endpoints
 from fastapi import APIRouter
-from .endpoints.endpoint_name import ClassName
-from .schemas.doc import Doc
+from .endpoints.endpoint_1 import ClassName
+from .schemas.schema_1 import SchemaName
 
 router = APIRouter(
     prefix='/api/v1',
@@ -11,8 +11,8 @@ router = APIRouter(
 )
 
 @router.post('/endpoint-name')
-async def func_name(doc: Doc):
-    class_name = ClassName(doc.text)
+async def func_name(schema_name: SchemaName):
+    class_name = ClassName(schema_name.field_name)
     result = class_name.get_inference()
 
     return result
