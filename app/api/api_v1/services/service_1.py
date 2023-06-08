@@ -10,7 +10,7 @@ class ServiceOne:
     def get_inference(self, text):
         try:
             # do something here
-            temp = []
+            temp = [1, 2]
             temp[0] = models.the_model
             temp[1] = 100
             text = temp 
@@ -20,4 +20,4 @@ class ServiceOne:
         except Exception as e:
             logger.error('error while getting something :', e, 'with input :', text)
 
-            return '', 0, e
+            return '', 0, f'{e}'
