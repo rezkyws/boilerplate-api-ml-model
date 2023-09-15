@@ -1,4 +1,4 @@
-# module specific business logic (will be use for endpoints)
+# module specific business logic (spesific use case)
 from ..load_models import models
 from ....core.logging import logger
 
